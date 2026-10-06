@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reusable DM loot presets and custom drop rates, personalized animated D20 dice, player bonuses, and shared roll history."><meta name="author" content="CorgiTheCat"><link rel="icon" type="image/png" href="/loot-icon.png"><meta name="theme-color" content="#11100f"><title>Loot Ledger for Owlbear Rodeo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#11100f;color:#ead9b3;font:14px system-ui,sans-serif;padding:18px}main{width:100%;max-width:560px;border:1px solid #79623c;border-radius:12px;padding:24px;background:#1e1a16}header{text-align:center}h1{font:30px Georgia,serif;margin:12px 0}h2{font:20px Georgia,serif;margin:22px 0 10px}p,li{line-height:1.65;color:#b8a98f}img{width:54px;height:54px}label{display:block;font-size:12px;margin-bottom:7px}input{width:100%;min-width:0;padding:11px;color:#f2e5c7;background:#11100f;border:1px solid #79623c;border-radius:5px;font:12px monospace}button,a{font:inherit}button{border:1px solid #bd9858;border-radius:5px;padding:10px 14px;color:#f4e5c3;background:#4e3826;cursor:pointer}a{color:#e5c788}.actions{display:flex;gap:15px;align-items:center;margin-top:10px;flex-wrap:wrap}ol{padding-left:22px}li+li{margin-top:8px}#copy-status{font-size:12px;min-height:20px;margin:8px 0}.note{font-size:12px;border-top:1px solid #54452e;padding-top:12px}strong{color:#f1dfb8}
+</style></head><body><main>
+<header><img src="/loot-icon.png" alt=""><h1>Loot Ledger</h1><p>Reusable DM loot presets and custom drop rates, personalized animated D20 dice, player bonuses, and shared roll history.</p><p>Created by <strong>CorgiTheCat</strong></p></header>
+<h2>Install in Owlbear</h2><label for="install-url">Extension install link</label>
+<input id="install-url" readonly aria-describedby="copy-status">
+<div class="actions"><button id="copy-install" type="button">Copy install link</button><a id="view-manifest" href="/manifest.json" target="_blank" rel="noopener">View manifest</a></div>
+<p id="copy-status" role="status" aria-live="polite"></p>
+<ol><li>Open your Owlbear profile, choose <strong>Add Extension</strong>, and paste this install link.</li>
+<li>Enable <strong>Loot Ledger</strong> in your room.</li>
+<li>As DM, select a token and choose <strong>Loot Ledger &mdash; Manage</strong>. Add drops, set rates and rarity, then begin a session.</li>
+<li>Players select the same token and choose <strong>Loot Ledger &mdash; Roll</strong>.</li></ol>
+<p class="note">The DM must have the room open to resolve rolls. Every roll uses D20; a selected natural 1 awards nothing. Drops repeat without stock limits. Choose Customize dice to personalize your Built-in dice with colors, materials, five number fonts and six patterns.</p>
+</main><script type="module" src="/src/install.js"></script></body></html>

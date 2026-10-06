@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Keep manifest.json, loot.html and background.html as separate routes.
+# This multi-page extension must not use an SPA catch-all redirect.

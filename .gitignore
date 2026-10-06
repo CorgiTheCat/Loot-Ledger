@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+.sites-runtime/
+dist/
+.openai/
+.netlify/
+.env
+.env.*
+!.env.example
+*.log

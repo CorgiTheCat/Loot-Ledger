@@ -1,0 +1,17 @@
+{
+  "name": "loot-ledger-owlbear",
+  "private": true,
+  "version": "1.7.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "owlbear:local": "npm run build && vite preview --host 0.0.0.0 --port 5184 --strictPort"
+  },
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "latest",
+    "dddice-js": "^0.21.8",
+    "three": "^0.180.0",
+    "vite": "latest"
+  }
+}
