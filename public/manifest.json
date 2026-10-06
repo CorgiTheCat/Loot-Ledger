@@ -1,6 +1,6 @@
 {
   "name": "Loot Ledger",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "manifest_version": 1,
   "description": "Reusable DM loot presets and custom drop rates, personalized animated D20 dice, player bonuses, and shared roll history.",
   "icon": "/loot-icon.png",
