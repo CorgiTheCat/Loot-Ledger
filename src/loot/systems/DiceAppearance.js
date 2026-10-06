@@ -24,7 +24,8 @@ export const DICE_PALETTE = Object.freeze([
 ]);
 export const DEFAULT_APPEARANCE = Object.freeze({
   bodyColor: '#734b30', numberColor: '#fff0c5', edgeColor: '#d6ae63',
-  font: 'serif', material: 'resin', pattern: 'none', metalness: .48, roughness: .32,
+  font: 'serif', material: 'resin', pattern: 'none', patternColor: '#d6ae63', patternScale: 1,
+  metalness: .48, roughness: .32,
 });
 const color = (value, fallback) => typeof value === 'string' && /^#[\da-f]{6}$/i.test(value) ? value.toLowerCase() : fallback;
 const amount = (value, fallback) => typeof value === 'number' && Number.isFinite(value) ? Math.max(0, Math.min(1, value)) : fallback;
@@ -37,6 +38,9 @@ export function normalizeAppearance(value = {}) {
     font: DICE_FONTS.some(item => item.id === value.font) ? value.font : DEFAULT_APPEARANCE.font,
     material: DICE_MATERIALS.some(item => item.id === value.material) ? value.material : DEFAULT_APPEARANCE.material,
     pattern: DICE_PATTERNS.some(item => item.id === value.pattern) ? value.pattern : DEFAULT_APPEARANCE.pattern,
+    patternColor: color(value.patternColor, DEFAULT_APPEARANCE.patternColor),
+    patternScale: typeof value.patternScale === 'number' && Number.isFinite(value.patternScale)
+      ? Math.max(.25, Math.min(4, value.patternScale)) : DEFAULT_APPEARANCE.patternScale,
     metalness: amount(value.metalness, DEFAULT_APPEARANCE.metalness),
     roughness: amount(value.roughness, DEFAULT_APPEARANCE.roughness),
   };

@@ -64,4 +64,6 @@ Preset libraries are scoped to the DM identity and the extension website's brows
 
 ## Player dice customization (v1.7.0)
 
+In v1.7.1, choose a non-Solid pattern to unlock Pattern color and Pattern size (25%–400%). Pattern colors are independent of the body color. Size changes the marks and their spacing, leaving the die and its numbers the same size. These settings update the live preview and are saved with the player's existing appearance. Older saved styles receive the default gold pattern color and 100% size.
+
 Players open Customize dice to edit body, number and edge colors; ten quick swatches and color pickers allow any RGB color. There are five bundled system font choices, five material finishes with metallic/roughness sliders, and six procedural patterns. A live 3D preview shows unsaved edits. Save & use dice stores the normalized style for that player's identity on the same browser/website and selects Built-in dice. Cancel discards edits; Reset preview restores the default look until saved. The dice retain the chosen colors when rolling and highlight the kept Advantage/Disadvantage die without replacing its color. Number 6 and 9 have orientation marks. Styles do not affect loot rates, authoritative results or motion physics. dddice uses its own dice themes.

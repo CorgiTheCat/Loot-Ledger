@@ -184,7 +184,7 @@ export class Dice3D {
       const face = die.faces.find((candidate) => candidate.value === rawRolls[index]);
       if (!face) throw new Error('D20 roll must be between 1 and 20.');
 
-      die.mesh.material.color.set(this.appearance.bodyColor);
+      die.mesh.material.color.set(materialValues(this.appearance).color);
       const bounds = this.bounds(die);
       const mass = 1.6;
       const edge = Math.floor(Math.random() * 4);
@@ -245,7 +245,7 @@ export class Dice3D {
         body.done = cursor >= body.plan.frames.length - 1;
       });
       if (motion.bodies.every((body) => body.done)) {
-        this.roots.forEach((die, index) => die.mesh.material.color.set(this.appearance.bodyColor).multiplyScalar(motion.bodies[index].keep ? 1 : .45));
+        this.roots.forEach((die, index) => die.mesh.material.color.set(materialValues(this.appearance).color).multiplyScalar(motion.bodies[index].keep ? 1 : .45));
         this.settled = true;
         this.motion = null;
         motion.resolve();
